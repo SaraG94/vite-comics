@@ -14,6 +14,7 @@ export default{
 
 <template>
   <NavHeader></NavHeader>
+  <NavContent></NavContent>
   <div>
    
   </div>
