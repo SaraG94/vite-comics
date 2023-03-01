@@ -1,9 +1,11 @@
 <script>
 import NavHeader from'./components/NavHeader.vue'
+import Main from'./components/Main.vue'
 
 export default{
-   components:{
-    NavHeader
+  components:{
+    NavHeader,
+    Main
   },
 
   data(){
@@ -14,7 +16,7 @@ export default{
 
 <template>
   <NavHeader></NavHeader>
-  <NavContent></NavContent>
+  <Main></Main>
   <div>
    
   </div>

@@ -2,7 +2,7 @@
 export default{
   data(){
     return{
-      message:'content goes here'
+    
     }
   },
 }
@@ -12,9 +12,6 @@ export default{
 
   <div class="nav-header">
   
-  </div>
-  <div class="content">
-    {{message}}
   </div>
 
 </template>
@@ -26,14 +23,5 @@ export default{
     min-width: 1280px;
     background-color: bisque;
   }
-
-  .content{
-    /*debug*/
-    min-height: 100px;
-    min-width: 1280px;
-    background-color: black;
-    color: white;
-  }
-
 
 </style>
