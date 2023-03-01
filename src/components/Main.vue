@@ -11,11 +11,13 @@ export default{
 <template>
 
     <main>
-        <div class="container">
+        <div class="container black">
             <div class="main-content">
                 {{message}}
             </div>
+        </div>
 
+        <div class="container blue">
             <div class="shop-items">
                 <ul class="items">
                     <li>
@@ -46,15 +48,25 @@ export default{
 </template>
 
 <style scoped>
-    .container{
-        background-color: #0282F9;
+  
+
+    main{
         color: white;
     }
 
-    .main-content{
+    .container.black{
         min-height: 100px;
         background-color: black;
-        color: white;
+    }
+
+    .container.blue{
+       background-color: #0282F9;  
+    }
+
+    .main-content,
+    .shop-items{
+        max-width: 1080px;
+        margin: 0 auto;
     }
 
     .shop-items{
@@ -65,6 +77,7 @@ export default{
 
     ul.items{
         list-style: none;
+        padding:0;
         margin:0;
         width:100%;
         display:flex;
@@ -75,9 +88,9 @@ export default{
     ul.items>li{
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 15px;
         text-transform: uppercase;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     ul.items img{

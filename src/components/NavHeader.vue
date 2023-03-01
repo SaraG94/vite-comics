@@ -14,6 +14,7 @@ export default{
     <div class="logo">
       <img src="/img/dc-logo.png" alt="">
     </div>
+
     <ul class="nav-items">
       <li>Characters</li>
       <li>Comics</li>
@@ -40,6 +41,8 @@ export default{
   }
 
   .nav-header{
+    max-width: 1080px;
+    margin: 0 auto;
     display:flex;
     align-items: center;
     justify-content: space-between;
