@@ -1,10 +1,11 @@
 <script >
 export default{
+
   data(){
     return{
-    
+      navItems:['Characters','Comics','Movies','TV','Games','Collectibles','Videos','Fans','News','Shop',]
     }
-  },
+  }
 }
 </script>
 
@@ -16,16 +17,9 @@ export default{
     </div>
 
     <ul class="nav-items">
-      <li>Characters</li>
-      <li>Comics</li>
-      <li>Movies</li>
-      <li>TV</li>
-      <li>Games</li>
-      <li>Collectibles</li>
-      <li>Videos</li>
-      <li>Fans</li>
-      <li>News</li>
-      <li>Shop</li>
+      <li v-for="navItem in navItems">
+        {{ navItem }}
+      </li>
     </ul>
   </div>
 
@@ -43,6 +37,7 @@ export default{
   .nav-header{
     max-width: 1080px;
     margin: 0 auto;
+    padding: 13px 0;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -54,7 +49,5 @@ export default{
     text-transform: uppercase;
     font-weight: 700;
   }
-
-  
 
 </style>

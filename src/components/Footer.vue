@@ -107,7 +107,9 @@ export default{
     }
 
     .container{
-        background-image: url('/img/footer-bg.jpg'); 
+        background-image: url('/img/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     section{
