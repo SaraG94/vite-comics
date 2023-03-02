@@ -51,7 +51,7 @@ export default{
     main{
         color: white;
         background-image: url('/img/jumbotron.jpg');
-        min-height: 1200px;
+        min-height: 1400px;
         background-size: cover;
         display: flex;
         flex-direction: column;
