@@ -1,8 +1,8 @@
 <script >
 export default{
 
-  data(){
-    return{
+  data() {
+    return {
       navItems:['Characters','Comics','Movies','TV','Games','Collectibles','Videos','Fans','News','Shop',]
     }
   }

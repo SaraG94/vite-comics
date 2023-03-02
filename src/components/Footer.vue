@@ -1,7 +1,7 @@
 <script >
 export default{
   data(){
-    return{
+    return {
         dcComicsItems:['Characters','Comics','Movies','TV','Games','Videos','News'],
         shop:['Shop Dc','Shop Dc Colllectibles'],
         dcItems:['Terms Of Use','Privacy policy(new)','Ad Choices','Advertising','jobs','Subscriptions','Talent Workshops','CPSC Certificates','Ratings','Shop Help','contact Us'],

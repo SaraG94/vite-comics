@@ -1,7 +1,10 @@
 <script >
+import ComicsCards from './ComicsCards.vue';
 
 export default{
-
+    components:{
+        ComicsCards
+    },
 }
 </script>
 
@@ -9,7 +12,7 @@ export default{
     <main>
         <div class="container black">
             <div class="main-content">
-                
+                <ComicsCards></ComicsCards>
             </div>
         </div>
 
@@ -48,7 +51,7 @@ export default{
     main{
         color: white;
         background-image: url('/img/jumbotron.jpg');
-        min-height: 800px;
+        min-height: 1200px;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -56,8 +59,8 @@ export default{
     }
 
     .container.black{
-        min-height: 100px;
         background-color: black;
+        padding: 30px 0;
     }
 
     .container.blue{
