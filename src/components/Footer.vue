@@ -125,6 +125,7 @@ export default{
     .menu-items ul{
         color: grey;
         font-size: 14px;
+        line-height: 25px;
     }
 
     .col.sing button{
