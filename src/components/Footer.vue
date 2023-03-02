@@ -2,7 +2,10 @@
 export default{
   data(){
     return{
-     
+        dcComicsItems:['Characters','Comics','Movies','TV','Games','Videos','News'],
+        shop:['Shop Dc','Shop Dc Colllectibles'],
+        dcItems:['Terms Of Use','Privacy policy(new)','Ad Choices','Advertising','jobs','Subscriptions','Talent Workshops','CPSC Certificates','Ratings','Shop Help','contact Us'],
+        sitesItems:['DC', 'MAD Magazine', 'Dc Kids', 'Dc Universe', 'Dc Power visa']
     }
   },
 }
@@ -17,46 +20,25 @@ export default{
                     <div class="col">
                         <h3>dc comics</h3>
                         <ul>
-                            <li>Characters</li>
-                            <li>Comics</li>
-                            <li>Movies</li>
-                            <li>TV</li>
-                            <li>Games</li>
-                            <li>Videos</li>
-                            <li>News</li>
+                            <li v-for="item in dcComicsItems">{{ item }}</li>
                         </ul>
                     </div>
                     <div class="col">
                         <h3>Shop</h3>
                         <ul>
-                            <li>Shop Dc</li>
-                            <li>Shop Dc Colllectibles</li>
+                            <li v-for="shopItem in shop">{{shopItem}}</li>
                         </ul>
                     </div>
                     <div class="col">
                         <h3>Dc</h3>
                         <ul>
-                            <li>Terms Of Use</li>
-                            <li>Privacy policy(new)</li>
-                            <li>Ad Choices</li>
-                            <li>Advertising</li>
-                            <li>jobs</li>
-                            <li>Subscriptions</li>
-                            <li>Talent Workshops</li>
-                            <li>CPSC Certificates</li>
-                            <li>Ratings</li>
-                            <li>Shop Help</li>
-                            <li>contact Us</li>
+                            <li v-for="dcItem in dcItems">{{dcItem}}</li>
                         </ul>
                     </div>
                     <div class="col">
                         <h3>Sites</h3>
                         <ul>
-                            <li>DC</li>
-                            <li>MAD Magazine</li>
-                            <li>Dc Kids</li>
-                            <li>Dc Universe</li>
-                            <li>Dc Power visa</li>
+                            <li v-for="sitesItem in sitesItems">{{sitesItem}}</li>
                         </ul>
                     </div>
                 </div>
