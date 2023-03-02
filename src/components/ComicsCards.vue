@@ -91,12 +91,13 @@ export default{
     <div class="comics">
         <Card v-for="(card, i) in cards" :key="i" :card="card" ></Card>
     </div>
-    <!-- v-for="(card, i) in cards" :key="i" -->
 </template>
 
 <style scoped>
     .comics{
         display: flex;
         flex-wrap: wrap;
+        padding: 30px 0;
+        margin: 0 -10px;
     }
 </style>

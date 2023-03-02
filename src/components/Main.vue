@@ -12,7 +12,9 @@ export default{
     <main>
         <div class="container black">
             <div class="main-content">
+                <button class="series">Current series</button>
                 <ComicsCards></ComicsCards>
+                <button class="load">Load more</button>
             </div>
         </div>
 
@@ -53,6 +55,7 @@ export default{
         background-image: url('/img/jumbotron.jpg');
         min-height: 1400px;
         background-size: cover;
+        background-position: top,center;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -60,7 +63,6 @@ export default{
 
     .container.black{
         background-color: black;
-        padding: 30px 0;
     }
 
     .container.blue{
@@ -71,6 +73,29 @@ export default{
     .shop-items{
         max-width: 1080px;
         margin: 0 auto;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+    
+    button{
+        background-color: #0282F9;
+        color: white;
+        text-transform: uppercase;
+    }
+    button.series{
+        align-self: flex-start;
+        font-size: 24px;
+        padding: 10px 5px;
+        margin-top: -30px;
+    }
+
+    button.load{
+        padding: 15px 50px;
     }
 
     .shop-items{
