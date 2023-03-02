@@ -53,7 +53,7 @@ export default{
     main{
         color: white;
         background-image: url('/img/jumbotron.jpg');
-        min-height: 1400px;
+        min-height: 1500px;
         background-size: cover;
         background-position: top,center;
         display: flex;
@@ -81,7 +81,7 @@ export default{
         align-items: center;
         padding-bottom: 15px;
     }
-    
+
     button{
         background-color: #0282F9;
         color: white;
