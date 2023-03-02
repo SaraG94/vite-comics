@@ -1,19 +1,15 @@
 <script >
+
 export default{
-  data(){
-    return{
-       message:'content goes here'
-    }
-  },
+
 }
 </script>
 
 <template>
-
     <main>
         <div class="container black">
             <div class="main-content">
-                {{message}}
+                
             </div>
         </div>
 
@@ -48,10 +44,15 @@ export default{
 </template>
 
 <style scoped>
-  
 
     main{
         color: white;
+        background-image: url('/img/jumbotron.jpg');
+        min-height: 800px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
 
     .container.black{
